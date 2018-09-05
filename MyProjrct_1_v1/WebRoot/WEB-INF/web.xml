@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>MyProjrct_1_v1</display-name>
+  <listener>
+    <listener-class>cn.com.lin.listener.MyServletContextListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>cn.com.lin.listener.OnlineUserListener</listener-class>
+  </listener>
+  <filter>
+    <filter-name>DrityWordFilter</filter-name>
+    <filter-class>cn.com.lin.filter.DirtyWordFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>DrityWordFilter</filter-name>
+    <url-pattern>/AddCommentServlet</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+  </filter-mapping>
+</web-app>

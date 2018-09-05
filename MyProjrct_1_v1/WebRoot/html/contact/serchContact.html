@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="#" method="post">
+			按条件搜索联系人：<br/>
+			姓名<input class="text" name="con_name" type="text" value=""></input>
+				<input name="con_sex" type="radio" value="男" checked/>男<input name="con_sex"type="radio" value="女"/>女<br/>
+			年龄<input class="text" name="con_age" type="text" value=""></input>
+			电话<input class="text" name="con_tel" type="text" value=""></input><br/>
+			QQ<input  class="text" name="con_qq" type="text" value=""></input>
+			邮箱<input class="text" name="con_email" type="text" value=""></input><br/>
+			<input type="submit" value="检索">&nbsp;&nbsp;&nbsp;&nbsp;
+			<button type="button" onclick="#">清空</button>
+			<hr/>
+			<table align="center" border="1" width="800px">
+			<tbody align="center">
+				<tr>
+					<th>编号</th>
+					<th>姓名</th>
+					<th>性别</th>
+					<th>年龄</th>
+					<th>电话</th>
+					<th>QQ</th>
+					<th>邮箱</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="#">修改</a>/<a href="#">删除</a></td>
+				</tr>
+				<tr>
+					<td colspan="8"><span align="center"> 
+						<span>【为您查询到0条记录】</span>
+						<span>0/0</span>
+						<span><a href="#">首页</a></span> 
+						<span><a href="#">上一页</a></span> 
+						<span><a href="#">下一页</a></span> 
+						<span><a href="#">尾页</a></span>
+						<span><a href="#">[添加联系人]</a></span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="8"><span>没有查询到联系人</span> <span><a
+							href="#">[添加联系人]</a></span></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>
